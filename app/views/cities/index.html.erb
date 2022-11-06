@@ -1,0 +1,32 @@
+<h1>Cities#index</h1>
+<p>Find me in app/views/cities/index.html.erb</p>
+
+<h1>Open Airports</h1>
+<ul>
+<% @open_airport.each do |open| %>
+<li><%= open.inspect %></li>
+<% end %>
+</ul>
+<p></p>
+<h1>Closed Airports</h1>
+<ul>
+<% @closed_airport.each do |closed| %>
+<li><%= closed.inspect %></li>
+<% end %>
+</ul>
+<p></p>
+<h1>Weather Delay Airports</h1>
+<ul>
+<% @weather_airport.each do |weather| %>
+<li><%= weather.inspect %></li>
+<% end %>
+</ul>
+<p></p>
+<h1>Congested Airports</h1>
+<ul>
+<% @congested_airport.each do |congest| %>
+<li><%= congest.inspect %></li>
+<% end %>
+</ul>
+<p></p>
+
